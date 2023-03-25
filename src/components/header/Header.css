@@ -1,0 +1,60 @@
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+ 
+}
+
+.header_title {
+  color: azure;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header_btn {
+  float: right;
+  cursor: pointer;
+}
+
+
+@media(max-width:394px){
+  .header_title{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+
+  }
+  .header_btn{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 12px;
+  }
+  .header_out{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 12px;
+  }
+ 
+}
+.card{
+  color: white;
+  transform: translateY(-18px);
+  padding-left: 20px;
+}
+.out{
+ margin-left: 578px;
+
+}
+.bar{
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.left{
+transform: translateX(20px);
+}

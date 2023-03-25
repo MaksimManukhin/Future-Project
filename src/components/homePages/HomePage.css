@@ -1,0 +1,122 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.feed{
+  margin-bottom: 40px;
+  font-size: 19px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.employ{
+  transform: translateY(-30px);
+  
+}
+
+.home_found{
+  margin-left: 450px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  
+}
+.parent{
+  position: relative;
+}
+.home_input{
+
+  display: block;
+  width: 300px;
+  height: 35px;
+  border: none;
+  padding-left: 15px;
+  border: 1px solid rgba(9, 43, 14, 0.781);
+  border-radius: 10px;
+  color: white;
+  background: rgba(5, 71, 32, 0.308);
+  transition: .3s ease-in-out
+}
+.home_input::placeholder{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home_input:focus{
+  outline: none;
+}
+.home_icon{
+  position: absolute;
+  left: 25%;
+  top: 12px;
+  cursor: pointer;
+}
+.home_button-next{
+  position: absolute;
+  color: white;
+  background-image: linear-gradient(#68b372, #2d8f3a94);
+    padding: 15px 25px; 
+    font-size: 13px; 
+    max-width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    right: 24%;
+    font-weight: 700;
+    border: 1px solid rgb(159, 218, 145);
+    border-radius:10px;
+   margin-top: 22px;
+
+}
+.home_button-prev{
+  position: absolute;
+  color: white;
+  background-image: linear-gradient(#68b372, #2d8f3a94);
+    padding: 15px 25px; 
+    font-size: 13px; 
+    width: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    left: 24%;
+    font-weight: 700;
+    border: 1px solid rgb(159, 218, 145);
+    border-radius:10px;
+   margin-top: 22px;
+  
+}
+ .home_button-next:hover, .home_button-prev:hover{
+  border: none;
+  color: rgb(255, 238, 238);
+  background-color: rgb(76, 148, 211);
+
+}
+
+@media(max-width:1060px){
+  .home{
+
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width:730px){
+  .home{
+    grid-template-columns: repeat(1,1fr);
+    transform: translateX(20%);
+  }
+}
+@media(max-width:390px){
+  .home{
+    grid-template-columns: repeat(1,1fr);
+    transform: translateX(-8%);
+  }
+}

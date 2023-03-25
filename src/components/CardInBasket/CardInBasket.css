@@ -1,0 +1,53 @@
+.learn {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  z-index: 5;
+}
+
+.learn_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.learn_title {
+  margin-left: 20px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.learn_img {
+  height: 120px;
+  width: 70px;
+  object-fit: cover;
+  background-size: auto;
+}
+
+.learn_price {
+  position: relative;
+  top: 50px;
+  right: 80px;
+  width: 150px;
+  font-size: 14px;
+  z-index: 2;
+
+}
+
+.learn_btn {
+  color: white;
+  padding: 5px 10px;
+  background-color: #311188;
+  height: 20px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.learn_btn:hover {
+  color: #413b3b;
+  background: white;
+}
